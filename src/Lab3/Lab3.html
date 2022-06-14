@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Створення форм за допомогою HTML</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td colspan="2" align="center"> Calvin Klein</td>
+    </tr>
+    <tr>
+        <td >Ім'я:</td>
+        <td>
+            <form>
+                <label for="name"></label>
+                <input type="text" id="name" name="user_name" required>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td >Новинки:</td>
+        <td>
+            <form>
+                <label>
+                    <input type="radio" name="question" value="Фільтри">
+                    Фільтри
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="Сортування">
+                    Сортування
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="Стать">
+                    Стать
+                </label>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td >Бренди:</td>
+        <td> <select>
+            <option value="1">Walker</option>
+            <option value="2">Under armour</option>
+            <option value="3">Tommy Hilfiger</option>
+            <option value="4">Nike</option>
+            <option value="5">Puma</option>
+        </select> </td>
+    </tr>
+    <tr>
+        <td > Тип одягу (жін/чоловіч)</td>
+        <td>
+            <form action="handler.php">
+                <p><input type="checkbox" name="a" > Взуття</p>
+                <p><input type="checkbox" name="a" checked > Аксесуари</p>
+                <p><input type="checkbox" name="a" > Білизна</p>
+                <p><input type="checkbox" name="a" > Спортивний одяг</p>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> Питання та відповіді
+            <p>
+                <label for="msg"></label>
+                <textarea id="msg" name="user_message"></textarea> </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> <button type="submit">Отправить</button>
+        </td>
+    </tr>
+</body>
+</html>
